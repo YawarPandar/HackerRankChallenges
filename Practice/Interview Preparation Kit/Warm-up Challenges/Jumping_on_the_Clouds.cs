@@ -24,13 +24,10 @@ class Result
 
     public static int jumpingOnClouds(List<int> c)
     {
-        int n = c.Count();
+        int n = c.Count;
         int jumps = 0;
-        for (int i = 0; i < n - 1; i++)
-        {
+        for (int i = 0; i < n - 1; i++, jumps++)
             if (c[i] == 0) i++;
-            jumps++;
-        }
         return jumps;
     }
 
